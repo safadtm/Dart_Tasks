@@ -1,8 +1,6 @@
 import 'dart:io';
 
 void main() {
-  print('Welcome to Biodata Generator! Please enter your information.');
-
   print('Name:');
   String name = stdin.readLineSync() ?? '';
 
@@ -21,7 +19,7 @@ void main() {
   print('Address:');
   String address = stdin.readLineSync() ?? '';
 
-  print('Hobbies (comma-separated list):');
+  print("Hobbies (separated by comma):");
   List<String> hobbies = (stdin.readLineSync() ?? '').split(',');
 
   String biodata = '''
